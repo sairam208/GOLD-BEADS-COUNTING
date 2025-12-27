@@ -3,7 +3,7 @@ import numpy as np
 
 # -------------------- READ IMAGE --------------------
 img = cv.imread(
-    r"G:/PROJECTS/IMAGE PROCESSING/GOLD PROJECT/kannan p1 2/kannan p1 2/gold/7/215.jpg"
+    r"G:/PROJECTS/IMAGE PROCESSING/GOLD PROJECT/kannan p1 2/kannan p1 2/gold/7/223.jpg"
 )
 
 # -------------------- HSV MASK --------------------
@@ -105,6 +105,7 @@ for i, cnt in enumerate(beads, start=1):
 
 # -------------------- DISPLAY --------------------
 cv.imshow("Original Image", img)
+cv.imshow("Edges", edges)
 cv.imshow("HSV Mask", mask)
 cv.imshow("Neck Regions", necks)
 cv.imshow("Broken Mask", broken_mask)
